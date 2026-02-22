@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 const features = [
   {
@@ -22,16 +22,16 @@ const features = [
     title: "Quick Preset",
     tags: ["#바로시작", "#상황별세팅"],
     color: "#AF85FF",
-    desc: '"오늘 많이 지쳤어", "중요한 결정 앞에 있어", "아이디어 내줘" — 상황을 고르면 최적의 비율이 자동으로 세팅돼요.',
+    desc: '"오늘 많이 지쳤어", "중요한 결정 앞에 있어", "아이디어 내줘" 등의 상황을 고르면 최적의 비율이 자동으로 세팅돼요.',
   },
-]
+];
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-40px" },
   transition: { duration: 0.45, delay },
-})
+});
 
 export default function Features() {
   return (
@@ -41,10 +41,7 @@ export default function Features() {
           기능
         </motion.p>
 
-        <motion.h2
-          {...fade(0.06)}
-          className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight"
-        >
+        <motion.h2 {...fade(0.06)} className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight">
           딱 세 가지만 기억하면 돼요
         </motion.h2>
 
@@ -53,7 +50,8 @@ export default function Features() {
             <motion.div
               key={f.number}
               {...fade(0.1 + i * 0.08)}
-              className="rounded-2xl border border-black/[0.06] bg-white/70 p-7 sm:p-8 flex flex-col gap-5"
+              whileHover={{ y: -5, boxShadow: `0 12px 28px ${f.color}30`, transition: { duration: 0.2, ease: "easeOut" } }}
+              className="rounded-2xl border border-black/[0.06] bg-white/70 p-7 sm:p-8 flex flex-col gap-5 cursor-default"
             >
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: f.color }} />
@@ -63,7 +61,7 @@ export default function Features() {
               <div>
                 <h3 className="font-display text-xl sm:text-2xl text-foreground leading-snug">{f.title}</h3>
                 <div className="flex flex-wrap gap-1.5 mt-2">
-                  {f.tags.map(tag => (
+                  {f.tags.map((tag) => (
                     <span
                       key={tag}
                       className="text-xs px-2 py-0.5 rounded-full font-mono"
@@ -81,5 +79,5 @@ export default function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }

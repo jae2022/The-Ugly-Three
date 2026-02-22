@@ -15,6 +15,10 @@
   --font-display: var(--font-jua);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: #FBF9F3;

@@ -1,5 +1,7 @@
+import Navbar from "@/components/main/navbar"
 import Hero from "@/components/main/hero"
 import Problem from "@/components/main/problem"
+import Solution from "@/components/main/solution"
 import Demo from "@/components/main/demo"
 import Features from "@/components/main/features"
 import HowTo from "@/components/main/howto"
@@ -8,26 +10,45 @@ import Footer from "@/components/main/footer"
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <div className="max-w-5xl mx-auto px-5">
-        <hr className="border-black/[0.06]" />
-      </div>
-      <Problem />
-      <div className="max-w-5xl mx-auto px-5">
-        <hr className="border-black/[0.06]" />
-      </div>
-      <Demo />
-      <div className="max-w-5xl mx-auto px-5">
-        <hr className="border-black/[0.06]" />
-      </div>
-      <Features />
-      <div className="max-w-5xl mx-auto px-5">
-        <hr className="border-black/[0.06]" />
-      </div>
-      <HowTo />
-      <CTA />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <div className="max-w-5xl mx-auto px-5">
+          <hr className="border-black/[0.06]" />
+        </div>
+        <div id="problem" className="scroll-mt-14">
+          <Problem />
+        </div>
+        <div className="max-w-5xl mx-auto px-5">
+          <hr className="border-black/[0.06]" />
+        </div>
+        <div id="solution" className="scroll-mt-14">
+          <Solution />
+        </div>
+        <div className="max-w-5xl mx-auto px-5">
+          <hr className="border-black/[0.06]" />
+        </div>
+        <div id="demo" className="scroll-mt-14">
+          <Demo />
+        </div>
+        <div className="max-w-5xl mx-auto px-5">
+          <hr className="border-black/[0.06]" />
+        </div>
+        <div id="features" className="scroll-mt-14">
+          <Features />
+        </div>
+        <div className="max-w-5xl mx-auto px-5">
+          <hr className="border-black/[0.06]" />
+        </div>
+        <div id="howto" className="scroll-mt-14">
+          <HowTo />
+        </div>
+        <div id="cta">
+          <CTA />
+        </div>
+        <Footer />
+      </main>
+    </>
   )
 }
