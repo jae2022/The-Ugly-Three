@@ -141,15 +141,6 @@ export default function CTA() {
       {/* Floating particles */}
       <ParticleCanvas />
 
-      {/* Subtle radial glow */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,144,131,0.07) 0%, rgba(80,215,181,0.05) 40%, transparent 70%)",
-        }}
-      />
-
       <div className="relative max-w-2xl mx-auto flex flex-col items-center text-center gap-6">
         {/* Pulse badge with gradient-cycling dot */}
         <motion.div
