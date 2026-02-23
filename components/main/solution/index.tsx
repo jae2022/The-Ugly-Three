@@ -51,11 +51,6 @@ export default function Solution() {
           <motion.h2 {...fade(0.06)} className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight">
             사실 우리 모두 이 셋을 갖고 있어요
           </motion.h2>
-          <motion.p {...fade(0.12)} className="text-muted text-sm sm:text-base leading-relaxed break-keep">
-            감성(Amo) · 이성(Edi) · 즉흥(Loco) 이 셋은 내 안에 늘 존재했던 목소리예요.
-            <br />
-            이 세 감정의 비율을 직접 조절해, 오늘의 나에게 꼭 맞는 AI를 만들어보세요.
-          </motion.p>
         </div>
 
         {/* Zigzag rows */}

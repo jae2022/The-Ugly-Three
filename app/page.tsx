@@ -3,7 +3,6 @@ import Hero from "@/components/main/hero"
 import Problem from "@/components/main/problem"
 import Solution from "@/components/main/solution"
 import Demo from "@/components/main/demo"
-import Features from "@/components/main/features"
 import HowTo from "@/components/main/howto"
 import CTA from "@/components/main/cta"
 import Footer from "@/components/main/footer"
@@ -31,12 +30,6 @@ export default function Home() {
         </div>
         <div id="demo" className="scroll-mt-14">
           <Demo />
-        </div>
-        <div className="max-w-5xl mx-auto px-5">
-          <hr className="border-black/[0.06]" />
-        </div>
-        <div id="features" className="scroll-mt-14">
-          <Features />
         </div>
         <div className="max-w-5xl mx-auto px-5">
           <hr className="border-black/[0.06]" />

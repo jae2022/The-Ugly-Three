@@ -27,12 +27,6 @@ const steps = [
     desc: "대화 도중에도 비율을 바꿀 수 있어요. 다음 응답부터 즉시 반영돼요.",
     icon: "Amo",
   },
-  {
-    number: "05",
-    title: "나만의 패턴 발견",
-    desc: "내가 어떤 상황에서 어떤 비율을 쓰는지 쌓이면서 나 자신을 더 잘 알게 돼요.",
-    icon: "Edi",
-  },
 ]
 
 const fade = (delay = 0) => ({
@@ -54,7 +48,7 @@ export default function HowTo() {
           {...fade(0.06)}
           className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight"
         >
-          딱 다섯 단계예요
+          딱 네 단계예요
         </motion.h2>
 
         <div className="mt-12 sm:mt-16 flex flex-col">

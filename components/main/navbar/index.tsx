@@ -6,7 +6,6 @@ const navLinks = [
   { label: "문제", href: "#problem" },
   { label: "솔루션", href: "#solution" },
   { label: "데모", href: "#demo" },
-  { label: "기능", href: "#features" },
   { label: "사용법", href: "#howto" },
 ]
 

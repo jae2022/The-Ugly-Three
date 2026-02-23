@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 
+const CHARACTER_COLORS = ["#FF9083", "#50D7B5", "#AF85FF", "#FF9083"];
+
 const problems = [
   {
     number: "01",
@@ -54,7 +56,7 @@ export default function Problem() {
             <motion.div
               key={p.number}
               {...fade(0.1 + i * 0.07)}
-              whileHover={{ y: -5, boxShadow: "0 12px 28px rgba(0,0,0,0.09)", transition: { duration: 0.2, ease: "easeOut" } }}
+              whileHover={{ y: -5, boxShadow: `0 12px 28px ${CHARACTER_COLORS[i]}40`, transition: { duration: 0.2, ease: "easeOut" } }}
               className="rounded-2xl border border-black/[0.06] bg-white/70 p-7 sm:p-8 flex flex-col gap-4 cursor-default"
             >
               <div className="flex items-center justify-between">
